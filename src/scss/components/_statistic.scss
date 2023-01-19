@@ -1,0 +1,42 @@
+.statistic {
+  padding: 100px 0;
+}
+
+.statistic__wrap {
+  display: flex;
+  padding: 0 20px 0 80px;
+  justify-content: center;
+  gap: 220px;
+
+  @include laptop {
+    gap: 80px;
+  }
+
+  @include tablet {
+    gap: 50px;
+  }
+
+  @include mobile {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+.statistic__number {
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 64px;
+  color: $black;
+  margin-bottom: 22px;
+
+  @include mobile {
+    margin-bottom: 12px;
+  }
+}
+
+.statistic__text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: $granite;
+}

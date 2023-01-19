@@ -1,0 +1,7 @@
+.logo-img {
+  width: 107px;
+
+  @include mobile {
+    width: 80px;
+  }
+}

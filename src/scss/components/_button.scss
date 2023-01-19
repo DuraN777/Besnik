@@ -1,0 +1,70 @@
+button {
+  padding: 0;
+  border: none;
+  outline: none;
+  color: inherit;
+  background: none;
+  font-size: 100%;
+  font-family: inherit;
+  font-weight: inherit;
+  cursor: pointer;
+}
+
+.btn {
+  background-color: $blue-dark;
+  color: $white;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 20px;
+  border-radius: $border-radius-md;
+  padding: 15px 25px;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.btn--header__sign-up {
+  background-color: transparent;
+  color: $blue-dark;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  padding: 10px 0;
+  
+  @include mobile {
+    padding: 0;
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
+
+.btn--header__register {
+  color: $white;
+  padding: 10px 20px;
+  border-radius: $border-radius-sm;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+
+  @include mobile {
+    padding: 8px 10px;
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
+
+.btn--hero {
+  padding: 15px 38px;
+}
+
+.btn--newsletter {
+  background-color: $white;
+  color: $marine-blue;
+  padding: 15px 22px;
+
+  @include mobile {
+    padding: 10px 15px;
+  }
+}
+

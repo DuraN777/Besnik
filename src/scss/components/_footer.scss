@@ -1,0 +1,144 @@
+.footer {
+  display: block;
+  padding: 38px 6px 25px;
+
+}
+
+.footer__links {
+  padding-bottom: 65px;
+
+  @include tablet {
+      padding-bottom: 30px;
+  }
+}
+
+.footer__wrap {
+  display: flex;
+  justify-content: space-between;
+  gap: 185px;
+
+  @include tablet {
+      gap: 20px;
+      flex-wrap: wrap;
+  }
+}
+
+.footer__col {
+  width: max-content;
+
+  &:last-child {
+    @include mobile {
+      max-width: 100px;
+    }
+  }
+}
+
+.footer__h3 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: $oil-gray;
+  margin-bottom: 42px;
+  font-family: $secondary-font-family;
+
+  @include tablet {
+      font-size: 16px;
+      line-height: 18px;
+      margin-bottom: 10px;
+  }
+}
+
+.footer__h4 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: $gray-footer;
+  margin-bottom: 37px;
+
+  @include tablet {
+      font-size: 12px;
+      line-height: 12px;
+      margin-bottom: 28px;
+  }
+}
+
+.footer__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__item {
+  margin-bottom: 18px;
+  width: max-content;
+  
+  @include tablet {
+      margin-bottom: 9px;
+  }
+}
+
+.footer__link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: $gray-footer;
+  display: block;
+
+  &:hover {
+    color: $oil-gray;
+  }
+
+  @include tablet {
+      font-size: 13px;
+      line-height: 13px;
+  }
+}
+
+.footer__icon-list {
+  display: flex;
+  flex-direction: row;
+  gap: 18px;
+
+  @include mobile {
+    gap: 7px;
+  }
+}
+
+.footer__icon {
+  background-color: $ghost;
+  padding: 9px 8px;
+  border-radius: $border-radius-sm;
+
+  &:hover {
+    transform: scale(1.15);
+  }
+}
+
+.footer__icon-img {
+  width: 12px;
+  height: 11px;
+}
+
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.footer__wrap-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @include mobile {
+      flex-direction: column;
+      gap: 10px;
+  }
+}
+
+.footer__bottom-copyright {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: $nickel;
+}
